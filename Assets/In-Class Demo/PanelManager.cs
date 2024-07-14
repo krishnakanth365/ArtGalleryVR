@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
+   
     public GameObject[] Panels;
+    public GameObject[] Pieces;
 
     private void Start()
     {
@@ -12,8 +14,11 @@ public class PanelManager : MonoBehaviour
         {
             obj.SetActive(false);
         }
+        foreach (GameObject obj in Pieces)
+        {
+            obj.SetActive(false);
+        }
 
     }
 
-   
 }
